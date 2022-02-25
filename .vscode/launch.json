@@ -10,10 +10,11 @@
             "name": "(gdb-remote) Debug",
             "type": "cortex-debug",
             "request": "launch",
-            "servertype": "openocd",
+            "servertype": "external",
+            "configFiles": ["openocd.gdb"],
             "cwd": "${workspaceRoot}",
             "runToEntryPoint": "main",
-            "executable": "target/thumbv7m-none-eabi/debug/examples/hello",
+            "executable": "target/thumbv6m-none-eabi/debug/examples/hello",
             "gdbTarget": "10.110.0.15:3333"
         },
         {
